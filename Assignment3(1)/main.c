@@ -2,7 +2,7 @@
 
 const char* PickWinner(char array1[], char array2[])
 {
-
+	return 0;
 }
 
 
