@@ -23,5 +23,11 @@ namespace TestCases
 			const char* actual_result = PickWinner("scissors", "paper");
 			Assert::AreSame(expected_result, actual_result);
 		}
+		TEST_METHOD(Draw_Test)
+		{
+			const char* expected_result = "Ivalid";
+			const char* actual_result = PickWinner("paper", "paper");
+			Assert::AreSame(expected_result, actual_result);
+		}
 	};
 }

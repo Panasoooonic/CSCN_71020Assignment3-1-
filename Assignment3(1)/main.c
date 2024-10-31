@@ -13,6 +13,10 @@ const char* PickWinner(char array1[], char array2[])
 	{
 		strcpy_s(winner, 10, "Player2");
 	}
+	if ((array1 == "rock" && array2 == "rock") || (array1 == "paper" && array2 == "paper") || (array1 == "scissors" && array2 == "scissors"))
+	{
+		strcpy_s(winner, 10, "Invalid");
+	}
 
 	return winner;
 }
