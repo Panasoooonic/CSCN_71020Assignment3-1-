@@ -11,10 +11,16 @@ namespace TestCases
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(Player1_Winning_Test)
 		{
 			const char* expected_result = "Player1";
 			const char* actual_result = PickWinner("rock", "scissors");
+			Assert::AreSame(expected_result, actual_result);
+		}
+		TEST_METHOD(Player2_Winning_Test)
+		{
+			const char* expected_result = "Player2";
+			const char* actual_result = PickWinner("scissors", "paper");
 			Assert::AreSame(expected_result, actual_result);
 		}
 	};
