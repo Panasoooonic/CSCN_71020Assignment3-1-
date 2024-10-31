@@ -13,9 +13,9 @@ namespace TestCases
 		
 		TEST_METHOD(TestMethod1)
 		{
-			const char* expected_result = "Rock";
-			const char* actual_result = PickWinner("Rock", "Paper");
-			Assert::AreEqual(expected_result, actual_result);
+			const char* expected_result = "Player1";
+			const char* actual_result = PickWinner("rock", "scissors");
+			Assert::AreSame(expected_result, actual_result);
 		}
 	};
 }
